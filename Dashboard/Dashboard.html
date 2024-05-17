@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="stilo.css" />
+    <title>Homepage</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar Section -->
+      <aside>
+        <div class="toggle">
+          <div class="logo">
+            <a href="Homepage.html">
+              <img src="logogo.png" />
+            </a>
+            <a href="Homepage.html">
+              <h2><span class="danger">Eco</span>Ride</h2>
+            </a>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="Dashboard.html" class="dashboard-link active">
+            <span class="material-icons-sharp"> dashboard </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="MyProfile.html" id="myProfileLink">
+            <span class="material-icons-sharp"> person_outline </span>
+            <h3>My Profile</h3>
+          </a>
+
+          <a href="DailyTask.html">
+            <span class="material-icons-sharp"> workspace_premium </span>
+            <h3>Daily Task</h3>
+          </a>
+          <a href="AboutEcoRide.html">
+            <span class="material-icons-sharp"> description </span>
+            <h3>About EcoRide</h3>
+          </a>
+          <a href="HowItWorks.html">
+            <span class="material-icons-sharp"> insights </span>
+            <h3>How It Works</h3>
+          </a>
+          <a href="ContactUs.html">
+            <span class="material-icons-sharp"> contact_support </span>
+            <h3>Contact Us</h3>
+          </a>
+          <a href="Feedback.html">
+            <span class="material-icons-sharp"> comment </span>
+            <h3>Feedback</h3>
+          </a>
+          <a href="Settings.html">
+            <span class="material-icons-sharp"> settings </span>
+            <h3>Settings</h3>
+          </a>
+          <a href="Login.html" class="logout">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!-- End of Sidebar Section -->
+
+      <!-- Main Content -->
+      <main>
+        <div id="content-area">
+          <h1>Dashboard</h1>
+          <!-- Analyses -->
+          <div class="analyse">
+            <div class="sales">
+              <div class="status">
+                <div class="info">
+                  <h3>Dist. Traveled</h3>
+                  <h1>550m</h1>
+                </div>
+                <div class="progresss">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="percentage">
+                    <p>+81%</p>
+                  </div>
+                </div>
+              </div>
+              <small class="text-muted">Last 30 days</small>
+            </div>
+            <div class="visits">
+              <div class="status">
+                <div class="info">
+                  <h3>Total (EG)</h3>
+                  <h1>32 kWh</h1>
+                </div>
+                <div class="progresss">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="percentage">
+                    <p>-48%</p>
+                  </div>
+                </div>
+              </div>
+              <small class="text-muted">Last 30 days</small>
+            </div>
+            <div class="searches">
+              <div class="status">
+                <div class="info">
+                  <h3>Burnt Calories</h3>
+                  <h1>800 cal</h1>
+                </div>
+                <div class="progresss">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="percentage">
+                    <p>+21%</p>
+                  </div>
+                </div>
+              </div>
+              <small class="text-muted">Last 24 hours</small>
+            </div>
+          </div>
+          <!-- End of Analyses -->
+
+          <!-- New Users Section -->
+          <div class="new-users">
+            <h2>Vacant Bicycle</h2>
+            <div class="user-list">
+              <div class="user">
+                <img src="3green.png" />
+                <h2>Entrance</h2>
+                <p>Show location</p>
+              </div>
+              <div class="user">
+                <img src="1green.png" />
+                <h2>CASS</h2>
+                <p>Show location</p>
+              </div>
+              <div class="user">
+                <img src="5green.png" />
+                <h2>Gymnasium</h2>
+                <p>Show location</p>
+              </div>
+              <div class="user">
+                <img src="2green.png" />
+                <h2>Bahay Alumni</h2>
+                <p>Show location</p>
+              </div>
+            </div>
+          </div>
+          <!-- End of New Users Section -->
+
+          <!-- Recent Orders Table -->
+          <div class="recent-orders">
+            <h2>Activities</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Bicycle Number</th>
+                  <th>Energy Generated (EG)</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <a href="#">Show All</a>
+          </div>
+          <!-- End of Recent Orders -->
+        </div>
+      </main>
+      <!-- End of Main Content -->
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="nav">
+          <button id="menu-btn">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <div class="dark-mode">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+          <span class="material-icons-sharp"> notifications_none </span>
+
+          <div class="profile">
+            <div class="profile-photo">
+              <img src="profile-0.jpg" />
+            </div>
+          </div>
+        </div>
+        <!-- End of Nav -->
+
+        <div class="user-profile">
+          <div class="logo">
+            <script
+              src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+              type="module"></script>
+            <dotlottie-player
+              id="lottiePlayer"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+              autoplay></dotlottie-player>
+            <p id="profileText">
+              Hey EcoRiders! Every pedal pushes for a greener campus! Ride with
+              purpose, cut emissions, and fuel sustainability - every pedal
+              counts!🚲🌏
+            </p>
+          </div>
+        </div>
+
+        <script>
+          // Define an array of content to rotate
+          const contentArray = [
+            {
+              lottieSrc:
+                "https://lottie.host/13fa50f4-c231-47d1-a6ec-a21fe9ff7ae9/G3gsaqZFOr.json",
+              text: "Hey EcoRiders! Every pedal pushes for a greener campus! Ride with purpose, cut emissions, and fuel sustainability - every pedal counts!🚲🌏",
+            },
+            {
+              text: "Encourage your friends and classmates to join in on the eco-friendly fun! The more people using EcoRide, the bigger the positive impact on our campus environment.🌱",
+            },
+            {
+              text: "Don't hog the bikes! If you've reached your destination and see someone else eyeing the bike, consider unlocking it for them through the app. Sharing is caring, after all.💚",
+            },
+            {
+              text: "If you spot a bike with a flat tire or a faulty lock, report it ASAP on the EcoRide app. Quick fixes mean safer rides for everyone! 🚲🔧",
+            },
+          ];
+
+          let currentIndex = 0;
+
+          // Function to update content
+          function updateContent() {
+            // Update Lottie animation source
+            document
+              .getElementById("lottiePlayer")
+              .setAttribute("src", contentArray[currentIndex].lottieSrc);
+            // Update text content
+            document.getElementById("profileText").textContent =
+              contentArray[currentIndex].text;
+            // Increment index or reset to 0 if exceeding array length
+            currentIndex = (currentIndex + 1) % contentArray.length;
+          }
+
+          // Initial call to update content
+          updateContent();
+
+          // Set interval to update content every 5 seconds
+          setInterval(updateContent, 3000);
+        </script>
+
+        <div class="reminders">
+          <div class="header">
+            <h2>Badges</h2>
+          </div>
+
+          <div class="notification">
+            <div class="icon">
+              <img
+                src="calories.png"
+                style="max-width: 50px; max-height: 50px" />
+            </div>
+            <div class="content">
+              <div class="text">
+                <h3>
+                  Earned the EcoWarrior Badge for Burning 1600 Calories in a
+                  Day!
+                </h3>
+                <small class="text_muted"> May 18, 2024 </small>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification deactive">
+            <div class="icon">
+              <img
+                src="distance.png"
+                style="max-width: 50px; max-height: 50px" />
+            </div>
+            <div class="content">
+              <div class="text">
+                <h3>
+                  Earned the Green Traveler Badge for Biking 1 km in a Day!
+                </h3>
+                <small class="text_muted"> May 13, 2024 </small>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            style="
+              color: #36c172;
+              float: right;
+              margin-bottom: 20px;
+              margin-right: 10px;
+            "
+            >Show All</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
