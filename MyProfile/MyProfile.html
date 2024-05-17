@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="stilo.css" />
+    <title>My Profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar Section -->
+      <aside>
+        <div class="toggle">
+          <div class="logo">
+            <a href="Homepage.html">
+              <img src="logogo.png" alt="Logo" />
+            </a>
+            <a href="Homepage.html">
+              <h2><span class="danger">Eco</span>Ride</h2>
+            </a>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="Dashboard.html">
+            <span class="material-icons-sharp"> dashboard </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a
+            href="MyProfile.html"
+            id="myProfileLink"
+            class="dashboard-link active">
+            <span class="material-icons-sharp"> person_outline </span>
+            <h3>My Profile</h3>
+          </a>
+          <a href="DailyTask.html">
+            <span class="material-icons-sharp"> workspace_premium </span>
+            <h3>Daily Task</h3>
+          </a>
+          <a href="AboutEcoRide.html">
+            <span class="material-icons-sharp"> description </span>
+            <h3>About EcoRide</h3>
+          </a>
+          <a href="HowItWorks.html">
+            <span class="material-icons-sharp"> insights </span>
+            <h3>How It Works</h3>
+          </a>
+          <a href="ContactUs.html">
+            <span class="material-icons-sharp"> contact_support </span>
+            <h3>Contact Us</h3>
+          </a>
+          <a href="Feedback.html">
+            <span class="material-icons-sharp"> comment </span>
+            <h3>Feedback</h3>
+          </a>
+          <a href="Login.html" class="logout">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!-- End of Sidebar Section -->
+
+      <!-- Main Content -->
+      <main>
+        <div id="content-area">
+          <h1>My profile</h1>
+          <form id="profile-form">
+            <h2>Personal Details</h2>
+            <div class="profile-picture-container">
+              <input
+                type="file"
+                id="profile-picture"
+                name="profile-picture"
+                accept="image/*" />
+              <div
+                class="profile-picture-preview"
+                id="profile-picture-preview"></div>
+            </div>
+            <div class="profile-buttons">
+              <button type="button" id="remove-photo">Remove Photo</button>
+              <button type="button" id="update-photo">Update Photo</button>
+            </div>
+            <div class="profile-id">
+              <label for="user-id">ID:</label>
+              <p id="user-id">12345678</p>
+              <!-- Replace with dynamic ID if needed -->
+            </div>
+            <!-- User Information -->
+            <div class="user-details">
+              <div class="user-field">
+                <label for="username">Full Name</label>
+                <p id="username">JohnDoe</p>
+              </div>
+              <div class="user-field">
+                <label for="full-name">Username</label>
+                <p id="full-name">John Doe</p>
+              </div>
+              <div class="user-field">
+                <label for="email">Email</label>
+                <p id="email">johndoe@example.com</p>
+              </div>
+            </div>
+            <div class="holder">
+              <div class="column">
+                <form id="add-user-form">
+                  <h2>Account Settings</h2>
+                  <!-- Form for adding a new user -->
+                  <label
+                    >Full Name<input type="text" id="name" required
+                  /></label>
+                  <label
+                    >Username<input type="text" id="name" required
+                  /></label>
+                  <label>Email<input type="email" id="age" required /></label>
+                  <button type="submit" name="submit">Update</button>
+                </form>
+              </div>
+              <div class="column">
+    
+                  <h2>Security</h2>
+                  <label
+                    >New Password<input type="text" id="name" required
+                  /></label>
+                  <label
+                    >Confirm Password<input type="text" id="email" required
+                  /></label>
+                  <button type="submit" name="submit">Update</button>
+                </form>
+              </div>
+              <button type="submit" class="delete-button">
+                Delete Account
+              </button>
+            </div>
+          </form>
+          <!-- End of user profile form -->
+
+          <!-- Add your new content here -->
+          <div class="holder"></div>
+          <br />
+          <table id="users-table" class="column-span">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+          <!-- End of New content -->
+        </div>
+      </main>
+      <!-- End of Main Content -->
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="nav">
+          <button id="menu-btn">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <div class="dark-mode">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+          <span class="material-icons-sharp"> notifications_none </span>
+
+          <div class="profile">
+            <div class="profile-photo">
+              <img src="profile-0.jpg" alt="Profile Photo" />
+            </div>
+          </div>
+        </div>
+        <!-- End of Nav -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
